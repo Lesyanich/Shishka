@@ -15,7 +15,7 @@ print("Лог: shishka_prices.log")
 JSON_KEY = 'shishka-475711-43f92ff78d01.json'
 SHEET_URL = 'https://docs.google.com/spreadsheets/d/1hLJjx5SuEna80GWOAnMGVnLtso_Y2MZvkpDfAp5fucU/edit?usp=sharing'
 WORKSHEET = 'CapEx'
-THB_RATE = 33.5  # USD → THB
+THB_RATE = 33.5  # курс USD → THB
 
 # === CLOUDSCRAPER ===
 scraper = cloudscraper.create_scraper(
@@ -32,7 +32,8 @@ sheet = gc.open_by_url(SHEET_URL)
 ws = sheet.worksheet(WORKSHEET)
 print("Таблица открыта!")
 
-# === ПАРСИНГ ЦЕНЫ (ФИКС: USD-диапазоны без пробелов, низкий порог 20+) ===
+
+# === ФУНКЦИЯ ПАРСИНГА ЦЕНЫ ===
 def parse_price(url):
     if not url.startswith('http'):
         return "Invalid URL"
@@ -43,70 +44,61 @@ def parse_price(url):
             return f"HTTP {response.status_code}"
 
         soup = BeautifulSoup(response.text, 'html.parser')
-        text = soup.get_text(separator=' ')
 
-        # Ищем элементы с классами цены
-        price_elements = soup.find_all(class_=re.compile(r'price|Price|amount|range|cost', re.I))
-        price_text = ' '.join([el.get_text(separator=' ') for el in price_elements])
+        # --- удаляем скрипты и стили (в них часто мусорные JSON-цены) ---
+        for tag in soup(['script', 'style', 'noscript']):
+            tag.decompose()
 
-        full_text = text + ' ' + price_text
+        # --- ищем только реальные элементы с ценами ---
+        price_containers = soup.find_all(
+            lambda tag: tag.name in ['span', 'div'] and
+            tag.get_text(strip=True) and
+            re.search(r'(price|Price|THB|USD|\$|฿)', tag.get_text(), re.I)
+        )
 
-        # ФИКС ПАТТЕРНЫ: "40-150 $", "246 $", пробелы/запятые опционально
+        price_texts = [p.get_text(separator=' ', strip=True) for p in price_containers]
+        full_text = ' '.join(price_texts)
+
+        # --- шаблоны для видимых цен ---
         patterns = [
-            r'(\d{1,3}(?:[.,]\d{3})*(?:\.\d+)?)\s*-\s*(\d{1,3}(?:[.,]\d{3})*(?:\.\d+)?)\s*[$\฿]',  # 40-150 $
-            r'(\d{1,3}(?:\s\d{3})*(?:,\d{2})?)\s*[$\฿]',  # 8 123,89 $
-            r'[\$฿]\s*([0-9,]+\.?[0-9]*)',
-            r'([0-9,]+\.?[0-9]*)\s*(?:USD|THB|Dollar|Baht|$)',
-            r'([0-9]{1,3}(?:\s\d{3})*(?:,\d{2})?)\s*(?:РУБ|RUB|₽)',
-            r'([0-9,]+\.?[0-9]*)\s*(?:комп|pcs|MOQ)',
-            r'price[^\d]*([0-9,]+\.?[0-9]*)'
+            r'(?:THB|฿)\s*([0-9,]+(?:\.\d+)?)',  # THB 8,090.87
+            r'(?:USD|\$)\s*([0-9,]+(?:\.\d+)?)'   # USD 240 или $240
         ]
 
         prices = []
         for pattern in patterns:
             matches = re.findall(pattern, full_text, re.IGNORECASE)
             for m in matches:
-                if isinstance(m, tuple):
-                    for val in m:
-                        if val.strip():
-                            # ОЧИСТКА: пробелы/запятые → '', запятая → '.'
-                            clean = re.sub(r'\s|[^0-9.,]', '', val.strip())
-                            clean = clean.replace(',', '.')
-                            if re.match(r'^\d+\.?\d*$', clean):
-                                p = float(clean)
-                                if 20 <= p <= 50000:  # Низкий порог для USD 40+
-                                    prices.append(p)
-                else:
-                    if m.strip():
-                        clean = re.sub(r'\s|[^0-9.,]', '', m.strip())
-                        clean = clean.replace(',', '.')
-                        if re.match(r'^\d+\.?\d*$', clean):
-                            p = float(clean)
-                            if 20 <= p <= 50000:
-                                prices.append(p)
+                clean = m.replace(',', '')
+                if re.match(r'^\d+(\.\d+)?$', clean):
+                    p = float(clean)
+                    if 10 < p < 100000:  # фильтр: убираем нули, мусор и SKU-номера
+                        prices.append(p)
 
         if not prices:
             return "No price found"
 
-        min_p, max_p = min(prices), max(prices)
-        currency = 'USD' if any(x in full_text for x in ['USD', '$']) else '฿' if '฿' in full_text else 'RUB'
+        has_thb = bool(re.search(r'THB|฿', full_text))
+        has_usd = bool(re.search(r'USD|\$', full_text))
+        currency = 'THB' if has_thb else 'USD'
 
-        if currency == 'USD':
+        min_p, max_p = min(prices), max(prices)
+
+        # --- расчёт и формат ---
+        if currency == 'THB':
+            usd_min = min_p / THB_RATE
+            usd_max = max_p / THB_RATE
+            result = f"THB {min_p:,.2f} - THB {max_p:,.2f} (≈ USD {usd_min:,.0f} - USD {usd_max:,.0f})"
+        else:
             thb_min = min_p * THB_RATE
             thb_max = max_p * THB_RATE
-            result = f"{currency} {min_p:,.0f}"
-            if abs(min_p - max_p) > 0.01:
-                result += f" - {currency} {max_p:,.0f}"
-            result += f" (฿{thb_min:,.0f} - ฿{thb_max:,.0f})"
-        else:
-            result = f"{currency} {min_p:,.0f}"
-            if abs(min_p - max_p) > 0.01:
-                result += f" - {currency} {max_p:,.0f}"
+            result = f"USD {min_p:,.2f} - USD {max_p:,.2f} (฿{thb_min:,.0f} - ฿{thb_max:,.0f})"
 
         return result
 
     except Exception as e:
-        return f"Error: {str(e)[:40]}"
+        return f"Error: {str(e)[:60]}"
+
 
 # === ОСНОВНОЙ ЦИКЛ ===
 rows = ws.get_all_values()
