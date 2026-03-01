@@ -1,0 +1,26 @@
+Product_Code	Product_Name	Base_UOM	Storage_UOM	Storage_Ratio	Sale_UOM	Sale_Ratio
+RAW-FRESH_CARROT	Fresh Carrot	kg	Bag 25kg	25	kg	1
+RAW-ONION	Onion	kg	Bag 25kg	25	kg	1
+RAW-OLIVE_OIL	Olive Oil EV	l	Bottle 1L	1	l	1
+RAW-RAW_BEETROOT	Raw Beetroot	kg	Bag 25kg	25	kg	1
+RAW-FRESH_POTATO	Fresh Potato	kg	Bag 25kg	25	kg	1
+RAW-LEMON_JUICE	Lemon Juice	l	Bottle 1L	1	l	1
+RAW-GARLIC	Garlic	kg	Box 5kg	5	kg	1
+RAW-SHISHKA_MIX	Shishka Mix Spices	kg	Pack 500g	0.5	kg	1
+RAW-RO_WATER	RO Water	l	Dispenser	20	l	1
+RAW-ROOT_TRIMMINGS	Root Trimmings	kg	GN Tray	5	kg	1
+RAW-ONION_TRIMMINGS	Onion Trimmings	kg	GN Tray	5	kg	1
+RAW-HERB_STEMS	Herb Stems	kg	GN Tray	2	kg	1
+RAW-MUSHROOM_STEMS	Mushroom Stems	kg	GN Tray	3	kg	1
+RAW-CABBAGE_CORES	Cabbage Cores	kg	GN Tray	5	kg	1
+PF-VEGETABLE_BROTH	SF Vegetable Broth Zero-Waste	l	Bag 5L	5	l	1
+PF-MIREPOIX_SAUTE	SF Mirepoix (Saute)	kg	GN 1/1	3	kg	1
+PF-BAKED_BEETROOT	SF Baked Beetroot	kg	GN 1/1	3	kg	1
+PF-BORSCH_BASE	SF Borsch Base (Vacuum)	l	Bag 1.5L	1.5	portion	0.3
+MOD-SOUSVIDE_CHICKEN	Sous-vide Chicken	kg	Pack 100g	0.1	portion	0.08
+MOD-RED_BEANS	Red Beans	kg	Can 400g	0.4	portion	0.04
+MOD-SOUR_CREAM	Sour Cream	kg	Bucket 1kg	1	portion	0.03
+MOD-COCONUT_YOGURT	Coconut Yogurt	kg	Bucket 1kg	1	portion	0.03
+MOD-ANCIENT_CRUNCH	Ancient Crunch	kg	Bag 200g	0.2	portion	0.02
+MOD-GREENS	Greens	kg	Bunch 100g	0.1	portion	0.005
+SALE-BORSCH_BIOACTIVE	Borsch Bio-Active (portion)	portion	Bowl	1	portion	1

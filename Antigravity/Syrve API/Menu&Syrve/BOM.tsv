@@ -1,0 +1,24 @@
+Parent_Code	Parent_Name	Child_Code	Child_Name	QuantityGross	Unit
+PF-VEGETABLE_BROTH	SF Vegetable Broth Zero-Waste	RAW-RO_WATER	RO Water	11.7	l
+PF-VEGETABLE_BROTH	SF Vegetable Broth Zero-Waste	RAW-ROOT_TRIMMINGS	Root Trimmings	1.0	kg
+PF-VEGETABLE_BROTH	SF Vegetable Broth Zero-Waste	RAW-ONION_TRIMMINGS	Onion Trimmings	0.667	kg
+PF-VEGETABLE_BROTH	SF Vegetable Broth Zero-Waste	RAW-HERB_STEMS	Herb Stems	0.167	kg
+PF-VEGETABLE_BROTH	SF Vegetable Broth Zero-Waste	RAW-MUSHROOM_STEMS	Mushroom Stems	0.333	kg
+PF-VEGETABLE_BROTH	SF Vegetable Broth Zero-Waste	RAW-CABBAGE_CORES	Cabbage Cores	0.333	kg
+PF-VEGETABLE_BROTH	SF Vegetable Broth Zero-Waste	RAW-SHISHKA_MIX	Shishka Mix Spices	0.017	kg
+PF-VEGETABLE_BROTH	SF Vegetable Broth Zero-Waste	LOSS-PROCESSING_LOSS	Processing Loss	-1.7	l
+PF-MIREPOIX_SAUTE	SF Mirepoix (Saute)	RAW-ONION	Onion	0.606	kg
+PF-MIREPOIX_SAUTE	SF Mirepoix (Saute)	RAW-FRESH_CARROT	Fresh Carrot	0.606	kg
+PF-MIREPOIX_SAUTE	SF Mirepoix (Saute)	RAW-OLIVE_OIL	Olive Oil EV	0.121	l
+PF-MIREPOIX_SAUTE	SF Mirepoix (Saute)	RAW-SHISHKA_MIX	Shishka Mix Spices	0.061	kg
+PF-MIREPOIX_SAUTE	SF Mirepoix (Saute)	LOSS-PROCESSING_LOSS	Processing Loss	-0.1819	kg
+PF-BAKED_BEETROOT	SF Baked Beetroot	RAW-RAW_BEETROOT	Raw Beetroot	1.764	kg
+PF-BAKED_BEETROOT	SF Baked Beetroot	LOSS-PROCESSING_LOSS	Processing Loss	-0.2348	kg
+PF-BORSCH_BASE	SF Borsch Base (Vacuum)	PF-VEGETABLE_BROTH	SF Vegetable Broth Zero-Waste	7.181	l
+PF-BORSCH_BASE	SF Borsch Base (Vacuum)	PF-MIREPOIX_SAUTE	SF Mirepoix (Saute)	1.026	kg
+PF-BORSCH_BASE	SF Borsch Base (Vacuum)	PF-BAKED_BEETROOT	SF Baked Beetroot	1.539	kg
+PF-BORSCH_BASE	SF Borsch Base (Vacuum)	RAW-FRESH_POTATO	Fresh Potato	1.026	kg
+PF-BORSCH_BASE	SF Borsch Base (Vacuum)	RAW-LEMON_JUICE	Lemon Juice	0.103	l
+PF-BORSCH_BASE	SF Borsch Base (Vacuum)	RAW-GARLIC	Garlic	0.051	kg
+PF-BORSCH_BASE	SF Borsch Base (Vacuum)	LOSS-PROCESSING_LOSS	Processing Loss	-0.667	l
+SALE-BORSCH_BIOACTIVE	Borsch Bio-Active (portion)	PF-BORSCH_BASE	SF Borsch Base (Vacuum)	0.3	l

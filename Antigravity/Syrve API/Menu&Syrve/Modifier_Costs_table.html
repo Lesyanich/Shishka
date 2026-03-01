@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html><head><meta charset="utf-8"></head><body><table>
+<tr>
+  <th>Schema_Code</th><th>Dish_Code</th><th>Dish_Name</th>
+  <th>Group_Code</th><th>Group_Name</th><th>Min</th><th>Max</th>
+  <th>Item_Code</th><th>Item_Name</th><th>Default_Qty</th>
+  <th>Portion_Size_kg</th>
+  <th>Price_per_kg</th><th>Cost_per_Serving</th><th>Included_in_Default</th>
+</tr>
+<tr><td>SCH-BORSCH</td><td>SALE-BORSCH_BIOACTIVE</td><td>Borsch Bio-Active (portion)</td><td>MOD-ADDONS_PROTEIN</td><td>Add-ons (Protein)</td><td>1</td><td>1</td><td>MOD-SOUSVIDE_CHICKEN</td><td>Sous-vide Chicken</td><td>1</td><td>0.08</td><td>=IFERROR(VLOOKUP("MOD-SOUSVIDE_CHICKEN", Purchasing_Inventory!A:F, 6, FALSE), 0)</td><td>=K2 * L2</td><td>Yes</td></tr>
+<tr><td>SCH-BORSCH</td><td>SALE-BORSCH_BIOACTIVE</td><td>Borsch Bio-Active (portion)</td><td>MOD-ADDONS_PROTEIN</td><td>Add-ons (Protein)</td><td>1</td><td>1</td><td>MOD-RED_BEANS</td><td>Red Beans</td><td>0</td><td>0.04</td><td>=IFERROR(VLOOKUP("MOD-RED_BEANS", Purchasing_Inventory!A:F, 6, FALSE), 0)</td><td>=K3 * L3</td><td>No</td></tr>
+<tr><td>SCH-BORSCH</td><td>SALE-BORSCH_BIOACTIVE</td><td>Borsch Bio-Active (portion)</td><td>MOD-TOPPINGS</td><td>Toppings</td><td>0</td><td>3</td><td>MOD-ANCIENT_CRUNCH</td><td>Ancient Crunch</td><td>0</td><td>0.02</td><td>=IFERROR(VLOOKUP("MOD-ANCIENT_CRUNCH", Purchasing_Inventory!A:F, 6, FALSE), 0)</td><td>=K4 * L4</td><td>No</td></tr>
+<tr><td>SCH-BORSCH</td><td>SALE-BORSCH_BIOACTIVE</td><td>Borsch Bio-Active (portion)</td><td>MOD-TOPPINGS</td><td>Toppings</td><td>0</td><td>3</td><td>MOD-SOUR_CREAM</td><td>Sour Cream</td><td>0</td><td>0.03</td><td>=IFERROR(VLOOKUP("MOD-SOUR_CREAM", Purchasing_Inventory!A:F, 6, FALSE), 0)</td><td>=K5 * L5</td><td>No</td></tr>
+<tr><td>SCH-BORSCH</td><td>SALE-BORSCH_BIOACTIVE</td><td>Borsch Bio-Active (portion)</td><td>MOD-TOPPINGS</td><td>Toppings</td><td>0</td><td>3</td><td>MOD-COCONUT_YOGURT</td><td>Coconut Yogurt</td><td>0</td><td>0.03</td><td>=IFERROR(VLOOKUP("MOD-COCONUT_YOGURT", Purchasing_Inventory!A:F, 6, FALSE), 0)</td><td>=K6 * L6</td><td>No</td></tr>
+<tr><td>SCH-BORSCH</td><td>SALE-BORSCH_BIOACTIVE</td><td>Borsch Bio-Active (portion)</td><td>MOD-TOPPINGS</td><td>Toppings</td><td>0</td><td>3</td><td>MOD-GREENS</td><td>Greens</td><td>0</td><td>0.005</td><td>=IFERROR(VLOOKUP("MOD-GREENS", Purchasing_Inventory!A:F, 6, FALSE), 0)</td><td>=K7 * L7</td><td>No</td></tr>
+</table></body></html>

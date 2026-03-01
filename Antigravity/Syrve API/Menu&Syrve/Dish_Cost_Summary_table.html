@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html><head><meta charset="utf-8"></head><body><table>
+<tr>
+  <th>Dish_Code</th><th>Dish_Name</th>
+  <th>Base_BOM_Cost</th>
+  <th>Default_Modifier_Cost</th>
+  <th>Total_Default_Cost</th>
+  <th>Food_Cost_Pct_Target</th>
+  <th>Suggested_Min_Price</th>
+</tr>
+<tr><td>SALE-BORSCH_BIOACTIVE</td><td>Borsch Bio-Active (portion)</td><td>=IFERROR(SUMIF(BOM_Costing!A:A, "SALE-BORSCH_BIOACTIVE", BOM_Costing!J:J), 0)</td><td>=IFERROR(SUMPRODUCT((Modifier_Costs!B:B="SALE-BORSCH_BIOACTIVE")*(Modifier_Costs!N:N="Yes")*Modifier_Costs!M:M), 0)</td><td>=C2+D2</td><td>33%</td><td>=ROUND(E2/0.33, 0)</td></tr>
+</table></body></html>

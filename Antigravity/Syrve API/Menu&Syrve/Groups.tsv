@@ -1,0 +1,6 @@
+Group_Code	Syrve_System_ID	Group_Name	Parent_Group_Code	Description
+GRP-INGREDIENTS	95636dad-77b4-57bf-a09e-e7e4a88bd0ce	Raw Ingredients		Purchased raw materials
+GRP-ZEROWASTE	038ecc27-3212-508a-b362-09ac4d4f68ff	Zero-Waste Inputs	GRP-INGREDIENTS	Kitchen by-product trimmings; cost=0
+GRP-SF	c24f3fbb-32b3-5957-a761-1e331521c143	Semi-Finished		Kitchen-produced SF products
+GRP-MODIFIERS	35e11bb7-50ca-5c0c-b497-ba37028ed2ca	Modifiers & Add-ons		Guest-facing customisation items and groups
+GRP-SALE	8a830d34-ba76-53c0-af59-376737df80a7	Sale Menu		Items sold directly to guests
