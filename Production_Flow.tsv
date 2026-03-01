@@ -1,0 +1,11 @@
+Product_Code	Product_Name	Operation	Equipment_ID	Temperature	Duration_Min	Is_Bottleneck	Notes
+PF-VEGETABLE_BROTH	SF Vegetable Broth Zero-Waste	Roasting Trimmings	L-1-K-EL-CON-OVEN-83	200	25	No	Unit 20, 200C — Maillard reaction for depth/colour
+PF-VEGETABLE_BROTH	SF Vegetable Broth Zero-Waste	Simmering	L-1-K-GAS-RNG-570-32	95	75	Yes	Unit 32 — bring to boil, reduce to bare simmer 60-90 min
+PF-VEGETABLE_BROTH	SF Vegetable Broth Zero-Waste	Straining	MANUAL		10	No	Fine sieve / cheesecloth; solids to compost (Zero-Waste)
+PF-VEGETABLE_BROTH	SF Vegetable Broth Zero-Waste	Cooling	L-1-K-BL-FRZ-790-66	3	45	No	Unit 66 — Blast Chiller to 3°C
+PF-VEGETABLE_BROTH	SF Vegetable Broth Zero-Waste	Vacuuming	L-1-K-VAC-500-67		10	No	Unit 67 — 5 L vacuum bags; shelf life up to 5 days
+PF-BAKED_BEETROOT	SF Baked Beetroot	Baking	L-1-K-EL-CON-OVEN-83	180	120	Yes	Unit 20, 180C — until soft through
+PF-MIREPOIX_SAUTE	SF Mirepoix (Saute)	Sauteing	L-1-K-GAS-RNG-570-32	160	15	No	Unit 32 — continuous stirring
+PF-BORSCH_BASE	SF Borsch Base (Vacuum)	Boiling Potato	L-1-K-GAS-RNG-570-32	100	60	No	Unit 32 — until potatoes are tender
+PF-BORSCH_BASE	SF Borsch Base (Vacuum)	Cooling	L-1-K-BL-FRZ-790-66	3	45	No	Unit 66 — Blast Chiller
+PF-BORSCH_BASE	SF Borsch Base (Vacuum)	Vacuuming	L-1-K-VAC-500-67		10	No	Unit 67

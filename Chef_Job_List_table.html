@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html><head><meta charset="utf-8"></head><body><table>
+<tr><th>Staff_Role</th><th>Product_Code</th><th>Product_Name</th><th>Operation</th><th>Duration_Min</th><th>Duration_Total_Min</th><th>Equipment_ID</th></tr>
+<tr><td>Prep Cook</td><td>PF-VEGETABLE_BROTH</td><td>SF Vegetable Broth Zero-Waste</td><td>Roasting Trimmings</td><td>25</td><td>=IFERROR(VLOOKUP(B2, Daily_Production_Plan!A:D, 4, FALSE) * E2, 0)</td><td>L-1-K-EL-CON-OVEN-83</td></tr>
+<tr><td>Prep Cook</td><td>PF-VEGETABLE_BROTH</td><td>SF Vegetable Broth Zero-Waste</td><td>Simmering</td><td>75</td><td>=IFERROR(VLOOKUP(B3, Daily_Production_Plan!A:D, 4, FALSE) * E3, 0)</td><td>L-1-K-GAS-RNG-570-32</td></tr>
+<tr><td>Prep Cook</td><td>PF-VEGETABLE_BROTH</td><td>SF Vegetable Broth Zero-Waste</td><td>Straining</td><td>10</td><td>=IFERROR(VLOOKUP(B4, Daily_Production_Plan!A:D, 4, FALSE) * E4, 0)</td><td>MANUAL</td></tr>
+<tr><td>Packager</td><td>PF-VEGETABLE_BROTH</td><td>SF Vegetable Broth Zero-Waste</td><td>Cooling</td><td>45</td><td>=IFERROR(VLOOKUP(B5, Daily_Production_Plan!A:D, 4, FALSE) * E5, 0)</td><td>L-1-K-BL-FRZ-790-66</td></tr>
+<tr><td>Packager</td><td>PF-VEGETABLE_BROTH</td><td>SF Vegetable Broth Zero-Waste</td><td>Vacuuming</td><td>10</td><td>=IFERROR(VLOOKUP(B6, Daily_Production_Plan!A:D, 4, FALSE) * E6, 0)</td><td>L-1-K-VAC-500-67</td></tr>
+<tr><td>Prep Cook</td><td>PF-BAKED_BEETROOT</td><td>SF Baked Beetroot</td><td>Baking</td><td>120</td><td>=IFERROR(VLOOKUP(B7, Daily_Production_Plan!A:D, 4, FALSE) * E7, 0)</td><td>L-1-K-EL-CON-OVEN-83</td></tr>
+<tr><td>Chef</td><td>PF-MIREPOIX_SAUTE</td><td>SF Mirepoix (Saute)</td><td>Sauteing</td><td>15</td><td>=IFERROR(VLOOKUP(B8, Daily_Production_Plan!A:D, 4, FALSE) * E8, 0)</td><td>L-1-K-GAS-RNG-570-32</td></tr>
+<tr><td>Prep Cook</td><td>PF-BORSCH_BASE</td><td>SF Borsch Base (Vacuum)</td><td>Boiling Potato</td><td>60</td><td>=IFERROR(VLOOKUP(B9, Daily_Production_Plan!A:D, 4, FALSE) * E9, 0)</td><td>L-1-K-GAS-RNG-570-32</td></tr>
+<tr><td>Packager</td><td>PF-BORSCH_BASE</td><td>SF Borsch Base (Vacuum)</td><td>Cooling</td><td>45</td><td>=IFERROR(VLOOKUP(B10, Daily_Production_Plan!A:D, 4, FALSE) * E10, 0)</td><td>L-1-K-BL-FRZ-790-66</td></tr>
+<tr><td>Packager</td><td>PF-BORSCH_BASE</td><td>SF Borsch Base (Vacuum)</td><td>Vacuuming</td><td>10</td><td>=IFERROR(VLOOKUP(B11, Daily_Production_Plan!A:D, 4, FALSE) * E11, 0)</td><td>L-1-K-VAC-500-67</td></tr>
+</table></body></html>
