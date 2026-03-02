@@ -1,0 +1,16 @@
+Product_Code	Product_Name	Operation	Equipment_ID	Temperature	Duration_Min	Is_Bottleneck	Notes
+PF-VEGETABLE_BROTH	SF Vegetable Broth Zero-Waste	Roasting Trimmings	L-1-K-EL-CON-OVEN-83	200	25	No	Unit 20, 200°C — Maillard reaction
+PF-VEGETABLE_BROTH	SF Vegetable Broth Zero-Waste	Simmering	L-1-K-GAS-RNG-570-32	95	75	Yes	Unit 32 — bring to boil, bare simmer 60-90 min
+PF-VEGETABLE_BROTH	SF Vegetable Broth Zero-Waste	Straining	MANUAL		10	No	Fine sieve/cheesecloth; solids to compost
+PF-VEGETABLE_BROTH	SF Vegetable Broth Zero-Waste	Cooling	L-1-K-BL-FRZ-790-66	3	45	No	Unit 66 — Blast Chiller to 3°C
+PF-VEGETABLE_BROTH	SF Vegetable Broth Zero-Waste	Vacuuming	L-1-K-VAC-500-67		10	No	Unit 67 — 5 L bags; up to 5 days
+PF-BAKED_BEETROOT	SF Baked Beetroot	Baking	L-1-K-EL-CON-OVEN-83	180	120	Yes	Unit 20, 180°C
+PF-MIREPOIX_SAUTE	SF Mirepoix (Saute)	Sauteing	L-1-K-GAS-RNG-570-32	160	15	No	Unit 32
+PF-BORSCH_BASE	SF Borsch Base (Vacuum)	Boiling Potato	L-1-K-GAS-RNG-570-32	100	60	No	Unit 32
+PF-BORSCH_BASE	SF Borsch Base (Vacuum)	Cooling	L-1-K-BL-FRZ-790-66	3	45	No	Unit 66
+PF-BORSCH_BASE	SF Borsch Base (Vacuum)	Vacuuming	L-1-K-VAC-500-67		10	No	Unit 67
+PF-FERMENTED_CABBAGE	SF Fermented Cabbage	Slicing	MANUAL		15	No	Cabbage 2mm strips; carrot thin straws; reserve 2 outer cabbage leaves for cover
+PF-FERMENTED_CABBAGE	SF Fermented Cabbage	Massaging	MANUAL		5	No	Mix veg + salt; massage GENTLY 3-5 min until wet. Do NOT crush!
+PF-FERMENTED_CABBAGE	SF Fermented Cabbage	Packing	MANUAL		5	No	Layer into 5L press container; press with fist; cover with reserved outer leaves
+PF-FERMENTED_CABBAGE	SF Fermented Cabbage	Fermenting	FERM-01	21	5760	Yes	20-22°C; 3-5 days (avg 4 days); poke to bottom daily to release gas; pH target 3.8-4.2
+PF-FERMENTED_CABBAGE	SF Fermented Cabbage	Quality Check	MANUAL		5	No	Texture=Crunchy (no mushy); pH 3.8-4.2; discard & restart if soft or wrong smell

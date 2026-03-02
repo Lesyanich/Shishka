@@ -1,0 +1,7 @@
+Schema_Code	Target_Dish_Code	Target_Dish_Name	Modifier_Group_Code	Modifier_Group_Name	MinAmount_Group	MaxAmount_Group	Modifier_Item_Code	Modifier_Item_Name	DefaultAmount_Item	Portion_Size_kg
+SCH-BORSCH	SALE-BORSCH_BIOACTIVE	Borsch Bio-Active (portion)	MOD-ADDONS_PROTEIN	Add-ons (Protein)	1	1	MOD-SOUSVIDE_CHICKEN	Sous-vide Chicken	1	0.08
+SCH-BORSCH	SALE-BORSCH_BIOACTIVE	Borsch Bio-Active (portion)	MOD-ADDONS_PROTEIN	Add-ons (Protein)	1	1	MOD-RED_BEANS	Red Beans	0	0.04
+SCH-BORSCH	SALE-BORSCH_BIOACTIVE	Borsch Bio-Active (portion)	MOD-TOPPINGS	Toppings	0	3	MOD-ANCIENT_CRUNCH	Ancient Crunch	0	0.02
+SCH-BORSCH	SALE-BORSCH_BIOACTIVE	Borsch Bio-Active (portion)	MOD-TOPPINGS	Toppings	0	3	MOD-SOUR_CREAM	Sour Cream	0	0.03
+SCH-BORSCH	SALE-BORSCH_BIOACTIVE	Borsch Bio-Active (portion)	MOD-TOPPINGS	Toppings	0	3	MOD-COCONUT_YOGURT	Coconut Yogurt	0	0.03
+SCH-BORSCH	SALE-BORSCH_BIOACTIVE	Borsch Bio-Active (portion)	MOD-TOPPINGS	Toppings	0	3	MOD-GREENS	Greens	0	0.005

@@ -1,0 +1,33 @@
+Short_Code	Syrve_System_ID	Name	Type	OrderItemType	UsageNotes	Standard_Output_Amount	Standard_Output_UOM	Syrve_Sync	measureUnit	groupId	productCategoryId	modifierSchemaId	kcal_per100g	protein_per100g	fat_per100g	carbs_per100g
+RAW-FRESH_CARROT	12f4d802-500a-5271-be32-79eced36b236	Fresh Carrot	good	Product				Yes	kg	GRP-INGREDIENTS	CAT-VEGETABLES					
+RAW-ONION	9fc4e397-066d-5b25-bce3-a51a5181f621	Onion	good	Product				Yes	kg	GRP-INGREDIENTS	CAT-VEGETABLES					
+RAW-OLIVE_OIL	73e0beeb-d954-5de8-bf6f-325a60955075	Olive Oil EV	good	Product				Yes	l	GRP-INGREDIENTS	CAT-LIQUIDS					
+RAW-RAW_BEETROOT	4c4503e4-0306-5e57-a133-0fa88ed8f90b	Raw Beetroot	good	Product				Yes	kg	GRP-INGREDIENTS	CAT-VEGETABLES					
+RAW-FRESH_POTATO	dd2d1db1-c885-5cc6-98f9-fbed2c9c0e46	Fresh Potato	good	Product				Yes	kg	GRP-INGREDIENTS	CAT-VEGETABLES					
+RAW-LEMON_JUICE	eb0e18fd-c74e-571d-9eff-fda092d1b12c	Lemon Juice	good	Product				Yes	l	GRP-INGREDIENTS	CAT-LIQUIDS					
+RAW-GARLIC	499ab95f-d4c0-59dc-8503-2c57ae384307	Garlic	good	Product				Yes	kg	GRP-INGREDIENTS	CAT-VEGETABLES					
+RAW-SHISHKA_MIX	37d45528-e62a-5a1c-ad28-2e1984eaa2a0	Shishka Mix Spices	good	Product				Yes	kg	GRP-INGREDIENTS	CAT-SPICES					
+RAW-RO_WATER	e3b389f5-9bef-5e96-8906-39403645d678	RO Water	good	Product	Filtered/RO water; nominal cost			Yes	l	GRP-ZEROWASTE	CAT-ZEROWASTE					
+RAW-ROOT_TRIMMINGS	fba320ea-1d4a-57f5-aa8b-0f9f0e594ff3	Root Trimmings	good	Product	Zero-Waste; cost=0			Yes	kg	GRP-ZEROWASTE	CAT-ZEROWASTE					
+RAW-ONION_TRIMMINGS	630d49e6-0151-5695-ba37-1ef444638cab	Onion Trimmings	good	Product	Zero-Waste; cost=0			Yes	kg	GRP-ZEROWASTE	CAT-ZEROWASTE					
+RAW-HERB_STEMS	e57007cc-491c-50af-8086-46bb52dedb56	Herb Stems	good	Product	Zero-Waste; cost=0			Yes	kg	GRP-ZEROWASTE	CAT-ZEROWASTE					
+RAW-MUSHROOM_STEMS	87337a52-7058-5d49-9b70-de5b8151491d	Mushroom Stems	good	Product	Zero-Waste; cost=0			Yes	kg	GRP-ZEROWASTE	CAT-ZEROWASTE					
+RAW-CABBAGE_CORES	77cb66fe-7746-546f-abff-333c08d74c82	Cabbage Cores	good	Product	Zero-Waste; cost=0			Yes	kg	GRP-ZEROWASTE	CAT-ZEROWASTE					
+PF-VEGETABLE_BROTH	73b576fb-a8aa-534c-b49d-ff2e257613cb	SF Vegetable Broth Zero-Waste	dish	Product		10	l	Yes	l	GRP-SF	CAT-SOUPS_SF					
+PF-MIREPOIX_SAUTE	b71cdc15-88b0-5a41-827e-dc7f06478ad1	SF Mirepoix (Saute)	dish	Product	Universal SF	1	kg	Yes	kg	GRP-SF	CAT-SOUPS_SF					
+PF-BAKED_BEETROOT	e060a21c-76b4-5111-a7d3-a627b1f14326	SF Baked Beetroot	dish	Product	Universal SF	1	kg	Yes	kg	GRP-SF	CAT-SOUPS_SF					
+PF-BORSCH_BASE	f89e8881-c8e6-52b4-aae0-6a5d41cfe061	SF Borsch Base (Vacuum)	dish	Product		10	l	Yes	l	GRP-SF	CAT-SOUPS_SF		32	1.0	0.4	5.8
+MOD-SOUSVIDE_CHICKEN	b211b581-75f9-5070-b65d-0b1862b62eef	Sous-vide Chicken	modifier	Product				Yes	kg	GRP-MODIFIERS	CAT-PROTEINS		150	25.0	5.0	0
+MOD-RED_BEANS	84720ded-1e2e-5c27-8b3f-028857742fb5	Red Beans	modifier	Product				Yes	kg	GRP-MODIFIERS	CAT-PROTEINS		127	8.0	0.5	23
+MOD-SOUR_CREAM	92093d52-b82b-52d9-a5c6-49ba61818687	Sour Cream	modifier	Product				Yes	kg	GRP-MODIFIERS	CAT-TOPPINGS		200	2.5	20.0	3
+MOD-COCONUT_YOGURT	71b48ffa-70cd-527e-b671-9f714e6f960d	Coconut Yogurt	modifier	Product				Yes	kg	GRP-MODIFIERS	CAT-TOPPINGS		160	5.0	12.0	8
+MOD-ANCIENT_CRUNCH	3413e0e7-e703-5f44-8755-8a27b698f2e5	Ancient Crunch	modifier	Product				Yes	kg	GRP-MODIFIERS	CAT-TOPPINGS		450	15.0	22.0	50
+MOD-GREENS	5ada1f99-9930-5219-acfa-ef801638319d	Greens	modifier	Product				Yes	kg	GRP-MODIFIERS	CAT-TOPPINGS		30	2.5	0.4	3
+MOD-ADDONS_PROTEIN	b04f8634-13b3-5bd1-a087-4fdbf6e81b66	Add-ons (Protein)	modifier_group					Yes		GRP-MODIFIERS						
+MOD-TOPPINGS	5e6b2eac-d6aa-5758-87f6-b74181d39343	Toppings	modifier_group					Yes		GRP-MODIFIERS						
+RAW-WHITE_CABBAGE	8195768b-1b8a-569c-8ae5-23b3f2d78a67	White Cabbage	good	Product				Yes	kg	GRP-INGREDIENTS	CAT-VEGETABLES		25	1.3	0.1	5.8
+RAW-FINE_SALT	87f0cc8b-d8e5-5fc5-a503-6fd96ac4ddcf	Fine Salt	good	Product				Yes	kg	GRP-INGREDIENTS	CAT-SPICES					
+PF-FERMENTED_CABBAGE	b8c052ac-d54a-576d-8de7-7852e03772a0	SF Fermented Cabbage	dish	Product		3.2	kg	Yes	kg	GRP-SF	CAT-FERMENTED_SF		19	0.9	0.1	4.3
+SALE-BORSCH_BIOACTIVE	ca21828c-7d23-5ac4-b4b3-1efa8017f9f6	Borsch Bio-Active (portion)	dish	Compound		1	portion	Yes	portion	GRP-SALE	CAT-SOUPS_SALE	SCH-BORSCH	35	1.2	0.5	6.5
+SALE-KRAUT_SIDE	cb60dd56-bca9-5c32-b492-a1263c56152d	Kraut Side (portion)	dish	Compound		1	portion	Yes	portion	GRP-SALE	CAT-SIDES_SALE		19	0.9	0.1	4.3
+LOSS-PROCESSING_LOSS	LOSS-001	Processing Loss	service					No								

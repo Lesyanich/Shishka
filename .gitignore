@@ -1,0 +1,30 @@
+# ─── SENSITIVE — NEVER COMMIT ────────────────────────────────────────────────
+# Google service account private key
+gdisk_cred.json
+*.pem
+*.key
+.env
+.env.*
+secrets/
+
+# ─── Versioned HTML snapshots (auto-generated, too noisy) ────────────────────
+*_v2026*.html
+*_v2025*.html
+*_v2024*.html
+
+# ─── Python cache ────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# ─── OS files ────────────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ─── Editor ──────────────────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
