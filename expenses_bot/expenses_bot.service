@@ -1,0 +1,18 @@
+[Unit]
+Description=Expenses Tracking Telegram Bot
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=lesia
+WorkingDirectory=/home/lesia/expenses_bot
+ExecStart=/home/lesia/expenses_bot/venv/bin/python3 bot.py
+Restart=always
+RestartSec=10
+StandardOutput=journal
+StandardError=journal
+Environment=PYTHONUNBUFFERED=1
+
+[Install]
+WantedBy=multi-user.target
